@@ -1,0 +1,17 @@
+title: 'CreateSessiónBody'
+description: 'Create a new sessión'
+properties:
+  email:
+    title: Email
+    description: Email User
+    type: string
+    required: true
+    default: developer.mauricio2310@gmail.com
+    example: developer.mauricio2310@gmail.com
+  password:
+    title: Password
+    description: Password User
+    type: string
+    required: true
+    default: password
+    example: password

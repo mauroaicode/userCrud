@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: "API"
+  description: "API"
+  contact:
+    email: developer.mauricio2310@gmail.com
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  version: 1.0.0
+servers:
+  - url: ""
+    description: "SwaggerHUB API Mocking"
+components:
+  schemas:
+    SuccessResponse:
+      properties:
+        isSuccessful:
+          title: attribute
+          type: boolean
+          example: true
+        message:
+          title: attribute
+          description: message
+          type: string
+          example: Ok
+    ErrorResponse:
+      properties:
+        isSuccessful:
+          title: attribute
+          type: boolean
+          example: false
+        message:
+          title: attribute
+          description: message
+          type: string
+          example: Error Message
+        error:
+          example:
+            error: Error Message
+    NoContentResponse:
+      properties:
+        message:
+          title: attribute
+          description: message
+          type: string
+          example: No Content
+        error:
+          example:
+            error: No Content
+    LoginBodySchema:
+      $ref: '../swagger/API/V1/Body/auth/LoginBodySchema.yml'
+    LoginResponseSchema:
+      $ref: '../swagger/API/V1/response/auth/LoginResponseSchema.yml'
+    GetUsersResponseSchema:
+      $ref: '../swagger/API/V1/response/user/UsersResponseSchema.yml'
+    GetUserResponseSchema:
+      $ref: '../swagger/API/V1/response/user/UserResponseSchema.yml'
+    CreateUserBodySchema:
+      $ref: '../swagger/API/V1/body/user/UserCreateBodySchema.yml'
+    UpdateUserBodySchema:
+      $ref: '../swagger/API/V1/body/user/UserUpdateBodySchema.yml'
+  parameters:
+    User:
+      userId:
+        name: userId
+        in: path
+        description: "Indentificador del usuario"
+        required: true
+        schema:
+          type: string

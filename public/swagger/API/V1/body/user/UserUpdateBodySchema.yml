@@ -1,0 +1,31 @@
+title: 'UpdateUserBody'
+description: 'Update a new user'
+properties:
+  name:
+    title: Name
+    description: Name User
+    type: string
+    required: true
+    default: Maria
+    example: Maria
+  last_name:
+    title: LastName
+    description: Last Name User
+    type: string
+    required: true
+    default: Yanez
+    example: Yanez
+  phone:
+    title: Phone
+    description: Phone User
+    type: string
+    required: true
+    default: +573187951410
+    example: +573187951410
+  address:
+    title: Address
+    description: Address User
+    type: string
+    required: true
+    default: Calle 6 # 21-48
+    example: Calle 6 # 21-48

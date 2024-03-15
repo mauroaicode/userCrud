@@ -1,0 +1,20 @@
+title: CreateSessiónResponse
+description: Create a new sessión
+properties:
+example:
+  isSuccessful: true
+  message: Ok
+  session:
+    access_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YjhjYjFhMy0zOWMxLTQ5ZTUtODkzYi1hYjUwMjJkYTAzMDEiLCJqdGkiOiI0MWY0NDAxMjczNDg1ZMSIsInNjb3BlcyI6W119.gDlF9k_f6O9gUpu_5id9w8uPkx
+  user:
+    id: 03bfcd87-9105-4f48-b6ff-a75f11d7d461
+    name: Dr. Diego Quitzon
+    last_name: Ebert
+    phone: 415-343-9716
+    address: 4613 Matilde Station\nCormierport, MI 40824
+    path_profile_photo: https://via.placeholder.com/640x480.png/00dd33?text=omnis
+    email: bruen.luis@example.com
+    email_verified_at: 2024-03-12T23:22:51.000000Z
+    state: 1,
+    created_at: 2024-03-12T23:22:52.000000Z
+    updated_at: 2024-03-12T23:22:52.000000Z

@@ -1,0 +1,45 @@
+title: 'CreateUserBody'
+description: 'Create a new user'
+properties:
+  name:
+    title: Name
+    description: Name User
+    type: string
+    required: true
+    default: Dario
+    example: Dario
+  last_name:
+    title: LastName
+    description: Last Name User
+    type: string
+    required: true
+    default: Gomez
+    example: Gomez
+  email:
+    title: Email
+    description: Email User
+    type: string
+    required: true
+    default: dario2310@gmail.com
+    example: dario2310@gmail.com
+  phone:
+    title: Phone
+    description: Phone User
+    type: string
+    required: true
+    default: +573154940483
+    example: +573154940483
+  password:
+    title: Password
+    description: Password User
+    type: string
+    required: true
+    default: XOMxoamsAFMg
+    example: XOMxoamsAFMg
+  address:
+    title: Address
+    description: Address User
+    type: string
+    required: true
+    default: Calle 6 # 21-48
+    example: Calle 6 # 21-48

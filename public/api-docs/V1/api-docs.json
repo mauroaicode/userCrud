@@ -1,0 +1,329 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "UserCrudTest Documentation - Tests Design Solutions",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/v1/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Handle Login",
+                "description": "Create a new sessión",
+                "operationId": "7211b5b019382845791c19e419e68643",
+                "requestBody": {
+                    "description": "Create a new sessión body",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "/swagger/swagger.yml#/components/schemas/LoginBodySchema"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/LoginResponseSchema"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/logout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Handle user logout",
+                "description": "Logout Sessión",
+                "operationId": "978049b169b3cfc065b99988cca2f925",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/SuccessResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        },
+        "/api/v1/user/list": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Gets all users",
+                "description": "Gets all users",
+                "operationId": "f6051e909a7bdbdf126321e0bebcc102",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/GetUsersResponseSchema"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        },
+        "/api/v1/user/create": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create User",
+                "description": "Create a new user",
+                "operationId": "d6b90c29702cab493ef2924e5acfa5ae",
+                "requestBody": {
+                    "description": "Create a new user body",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "/swagger/swagger.yml#/components/schemas/CreateUserBodySchema"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/GetUserResponseSchema"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        },
+        "/api/v1/user/{userId}/update": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Update User",
+                "description": "Update a new user",
+                "operationId": "062fe5329b73b55ff3d9d65dae03330c",
+                "parameters": [
+                    {
+                        "$ref": "/swagger/swagger.yml#/components/parameters/User/userId"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Update a new user body",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "/swagger/swagger.yml#/components/schemas/UpdateUserBodySchema"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/GetUserResponseSchema"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        },
+        "/api/v1/user/{userId}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Find a user by its ID",
+                "description": "Find a user by its ID.",
+                "operationId": "d58252b7706fd51f39f254ca51f68c47",
+                "parameters": [
+                    {
+                        "$ref": "/swagger/swagger.yml#/components/parameters/User/userId"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/GetUserResponseSchema"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        },
+        "/api/v1/user/{userId}/delete": {
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Delete a user by its ID",
+                "description": "Delete a user by its ID",
+                "operationId": "e370016cd5c616e2330ddf662ab04720",
+                "parameters": [
+                    {
+                        "$ref": "/swagger/swagger.yml#/components/parameters/User/userId"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/SuccessResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Error operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "/swagger/swagger.yml#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "passport": {
+                "type": "http",
+                "description": "Laravel passport apiKey security.",
+                "in": "header",
+                "scheme": "bearer",
+                "flows": {
+                    "password": {
+                        "authorizationUrl": "http://localhost/oauth/authorize",
+                        "tokenUrl": "http://localhost/oauth/token",
+                        "refreshUrl": "http://localhost/token/refresh",
+                        "scopes": []
+                    }
+                }
+            }
+        }
+    }
+}

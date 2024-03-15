@@ -1,0 +1,16 @@
+title: GetUser
+description: Get user
+properties:
+example:
+  isSuccessful: true
+  message: Ok
+  user:
+    id: 114dd5f6-cea7-4fd7-b7fa-8c490c5cc7c7
+    name: Emmerich Rippin and Mitchell
+    last_name: Will
+    email: jquitzon@example.org
+    phone: 708-706-8075
+    state: 1
+    address: 919 Fadel Trafficway Suite 551\nVandervortburgh PA 80240
+    path_profile_photo: https://via.placeholder.com/640x480.png/00dd44?text=ea
+    created_at: 2024-03-13 11:16:45

@@ -1,0 +1,25 @@
+title: GetUsersBody
+description: Get users
+properties:
+example:
+  isSuccessful: true
+  message: Ok
+  users:
+    - id: 114dd5f6-cea7-4fd7-b7fa-8c490c5cc7c7
+      name: Emmerich Rippin and Mitchell
+      last_name: Will
+      email: jquitzon@example.org
+      phone: 708-706-8075
+      state: 1
+      address: 919 Fadel Trafficway Suite 551\nVandervortburgh PA 80240
+      path_profile_photo: https://via.placeholder.com/640x480.png/00dd44?text=ea
+      created_at: 2024-03-13T11:16:45.000000Z
+    - id: 1a4a6b8e-eac6-49fe-adf1-d142150cf204
+      name: Turcotte Trantow and Reinger
+      last_name: Dach
+      email: uhand@example.com
+      phone: 1-337-465-4620
+      state: 1
+      address: 8140 Kautzer Lane\nPort Josh OH 02937
+      th_profile_photo: https://via.placeholder.com/640x480.png/009911?text=quos
+      created_at: 2024-03-13 11:16:45
