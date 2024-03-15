@@ -20,6 +20,7 @@ La API está documentada con Swagger, proporcionando una referencia clara de los
 Para garantizar la calidad del código, escribí pruebas automatizadas utilizando PHPUnit, cubriendo tanto pruebas unitarias como de integración. Utilicé la herramienta de cobertura de código para medir la eficacia de las pruebas y asegurarme de que todo el código estuviera correctamente probado.
 
 Puede ver el [frontend hecho Vue con Nuxt](https://github.com/mauroaicode/userCrudFrontNuxtVuetify))
+
 Puede ver la API en swagger [http://127.0.0.1:8000/api/V1/documentation](http://127.0.0.1:8000/api/V1/documentation)
 
 ## Iniciar
