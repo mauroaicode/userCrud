@@ -19,7 +19,7 @@ La API está documentada con Swagger, proporcionando una referencia clara de los
 
 Para garantizar la calidad del código, escribí pruebas automatizadas utilizando PHPUnit, cubriendo tanto pruebas unitarias como de integración. Utilicé la herramienta de cobertura de código para medir la eficacia de las pruebas y asegurarme de que todo el código estuviera correctamente probado.
 
-Puede ver el [frontend hecho Vue con Nuxt](https://github.com/mauroaicode/games-architecture-hexagonal-frontend)
+Puede ver el [frontend hecho Vue con Nuxt](https://github.com/mauroaicode/games-architecture-hexagonal-frontend](https://github.com/mauroaicode/userCrudFrontNuxtVuetify))
 
 ## Iniciar
 
@@ -30,7 +30,7 @@ $ composer install
 # Llave única de la aplicación
 $ php artisan key:generate
 
-# Llave única de la aplicación
+# Generar Client ID y Client Secret
 $ php artisan passport:install (yes a todo)
 
 # generar datos semilla
